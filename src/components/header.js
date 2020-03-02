@@ -1,10 +1,11 @@
 import React from 'react'
-import {Sadcat} from '../images/sadcat.jpeg'
+import {headerimg} from '../images/headerimg.png'
 
 
  
 const Header = () => (
-    <div className="headercontainer"><img src={require('../images/sadcat.jpeg')} />
-    <p className="centered">Skylimit Fitness</p></div>
+    <div className="headercontainer"><img className="headerimg" src={require('../images/headerimg.png')} />
+    
+    </div>
 )
 export default Header

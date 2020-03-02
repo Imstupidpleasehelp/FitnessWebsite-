@@ -7,14 +7,25 @@ import Contact from './components/contact'
 import Blog from './components/blog'
 import Shop from './components/shop'
 import Services from './components/services'
+import Navbar from  './components/navbar'
 
 
 
 function App() {
   return (
     <div className="App">
-      <Header /> 
-   
+  <div className="fixedview"> 
+    <Header /> 
+    <Navbar />
+  </div>
+    <div className="viewthatchanges">
+<Home />
+<Meet /> 
+<Services /> 
+<Blog /> 
+<Shop /> 
+<Contact /> 
+    </div>
     </div>
   );
 }
