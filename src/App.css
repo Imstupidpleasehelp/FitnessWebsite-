@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: skyblue;
   color: white;
 }
 
@@ -13,12 +13,116 @@ body {
 .headerimg {
   width: 100%;
 }
+/* nav bar */ 
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.navbar-brand {
-  margin: -150;
+.slidelabel {
+  color: black;
+ margin-left: 0px;
+
+}
+/* Home carosuel */ 
+.blogbox {
+  margin: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+.blogitem {
+  float: left;
+  width: 25%;
+  margin: 2%;
+}
+.blogimage {
+  width: 100%;
+  height: 60%;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.flex-item {
+  width: 30%;
+  background: #369;
+}
+.flex-image {
+  width: 100%;
+}
+.flex-caption {
+  position: absolute;
+  color: black;
+  margin: 8px;
+  font-size: 100%;
+}
+/* Home page styling */ 
+.hometitle {
+  color: skyblue;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 45px;
+}
+.hometext {
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.homebio {
+  text-align: center;
+  margin-top: 5px;
+}
+.skyphoto {
+  height: 50%;
+
+  text-align: right;
+}
+.homesubtitle {
+  margin: 10px;
+  text-align: left;
+  color: skyblue;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+}
+.homeinfo {
+  font-size: 24px;
+  float: center;
+  
+}
+.fitnessguyphoto {
+  float: right;
+}
+.home3 {
+  margin-top: 150px;
+  float: center;
+  font-size: 16px;
+}
+.coachskywill {
+  color: skyblue; 
+  font-weight: bolder;
+  margin: 15px;
+  text-align: center;
+  font-size: 50px;
+}
+.homelist {
+  font-size: 24px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hometagline {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 48px;
+  color: skyblue;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
