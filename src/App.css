@@ -97,9 +97,6 @@ body {
   float: center;
   
 }
-.fitnessguyphoto {
-  float: right;
-}
 .home3 {
   margin-top: 150px;
   float: center;
@@ -121,8 +118,56 @@ body {
 .hometagline {
   text-align: center;
   font-weight: bolder;
-  font-size: 48px;
+  font-size: 36px;
   color: skyblue;
   margin-top: 100px;
   margin-bottom: 100px;
+  text-align: center;
+}
+.testimonialtitle {
+  font-size: 48px;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 100px;
+  color: skyblue;
+}
+.Testimonials {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./components/images/skyimage.jpeg);
+  width: 85%;
+  height: 20vh;
+  
+ 
+}
+.meettitle {
+  color: skyblue;
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+.skybiophoto {
+  float: left;
+}
+.skybio {
+  font-size: 20px;
+  width: 100%;
+ 
+}
+.meet {
+  margin: 50px;
+}
+.testimonialtext {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+.servicestitle{
+  text-align: center;
+  font-weight: bolder;
+  color: skyblue;
+  margin: 3%;
+}
+.servicestext {
+ font-size: 15px;
 }

@@ -1,15 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react'
 import './App.css';
 import Home from './components/home'
 import Contact from './components/contact'
 import Blog from './components/blog'
-import Shop from './components/shop'
 import Services from './components/services'
 import Navbar from  './components/navbar'
 import Header from './components/header'
 import { Switch, Route, Router, Redirect, BrowserRouter } from 'react-router-dom';
+import $ from 'jquery';
 
-function App() {
+
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      ServiceItems: {}
+    };
+
+  }
+
+  getResumeData(){
+    $.ajax({
+      url:'/ServiceItems.json',
+      dataType:'json',
+      cache: false,
+      success: function(data){
+        this.setState({ServiceItems: data});
+      }.bind(this),
+      error: function(xhr, status, err){
+        console.log(err);
+        alert(err);
+      }
+    });
+  }
+
+  componentDidMount(){
+    this.getResumeData();
+  }
+
+render () {
   return (
     <BrowserRouter>
     <div className="App">
@@ -18,16 +48,15 @@ function App() {
     <Navbar />
   </div>
     <div className="viewthatchanges">
-<Route path="/home" component={Home} />
-<Route path="/services" component={Services} />
+<Route exact path="/" component={Home} />
+<Route path="/services" component={Services} data={this.state.resumeData.ServiceItem} />
 <Route path="/blog" component={Blog} />
 <Route path="/contact" component={Contact} />
-<Route path="/shop"  component={Shop} /> 
 
     </div>
     </div>
     </BrowserRouter>
   );
 }
-
+}
 export default App;

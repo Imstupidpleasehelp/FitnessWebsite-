@@ -1,13 +1,13 @@
 import React from 'react'
 import Slidescroller from '../components/subcomponents/slidescroller' 
-
+import TestimonialScroller from  '../components/subcomponents/testimonialbox'
 
 const Home = () => (
     <div>
     <div><Slidescroller /></div><div className="homebio">
     <h1 className="hometitle">Sky's teaching philosphy</h1>
     <p className="hometext"> SkyLimit Fitness is dedicated to helping athletes crush their goals – whether that be crossing the finish line for the first time or breaking the ribbon. With an emphasis on coach-athlete communication, injury prevention, and performance optimization, Coach Sky wants to help you find your happiest, healthiest self on the way to your race.  </p>
-    <img className="skyphoto" src={require('../images/Sky.jpg')}></img>
+    <img className="skyphoto" src={require('./images/Sky.jpg')}></img>
     <h4>Coach Sky</h4>
     <br />
     </div>
@@ -20,7 +20,26 @@ const Home = () => (
       dedicated to your short-term goals and progress.</div>
       
     </div>
-    <img className="fitnessguyphoto" width="400px" height="300"src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.businessinsider.com%2Fimage%2F543171a2eab8eac12faf9c65%2Fimage.jpg&f=1&nofb=1"></img>
+
+
+
+    
+    <div className="meet">
+    <h2 className="meettitle">Meet Coach Sky</h2>
+    <img className="skybiophoto" src={require('./images/coachskybio.png')}></img>
+    <p className="skybio"> Hi, I’m Coach Sky! I’m a Triathlon and Run Coach based out of Spokane, WA/Coeur D’Alene, ID and coach virtually across the world.
+
+I am an Ironman Certified Coach, NASM Certified Personal Trainer, Certified Nutrition Coach with a Weight Loss Specialization.
+
+I am a lifelong swimmer with a love for adventurous racing. My race history is diverse, ranging from ITU World Championships and Team USA, 50 mile ultras, Ragnar Ultras and long distance open water swims. I enjoy the challenge of trying new distances and terrains, always learning and growing in the joy of racing.
+
+When I’m not coaching or training myself, you’ll find me dreaming up cycling inventions and trying to turn my fluffy, loopy doodles into dignified runners.</p>
+    </div>
+    {/* <img className="fitnessguyphoto" width="400px" height="300"src=""></img> */}
+
+
+
+
 <div className="home3">
     <h4 className="coachskywill">Coach Sky will:</h4>
     <ul className="homelist">
@@ -32,13 +51,10 @@ const Home = () => (
 
    
     <div>
-    <h1>Testimonials</h1>
+    <h1 className="testimonialtitle">Testimonials</h1>
+    <div className="Testimonials"><TestimonialScroller /></div>
 
-
-    <div className="meet">
-    <h2 className="meettitle">Meet Coach Sky</h2>
-
-    </div>
+    
     </div>
 </div>
 )
