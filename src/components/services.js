@@ -1,31 +1,46 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+import ServiceItem from './serviceitem';
 
+class Services extends React.Component {
+  constructor() {
+    super();
 
-class Services extends Component {
-  state = { Services: []
+    this.state = {
+      sections: [
+        {
+          title: 'Test item 1',
+          imageUrl: './serviceImages/cat.jpg',
+          description: 'blah blah',
+          linkUrl: 'www.google.com'
+        },
+        {
+          title: 'Test item 2',
+          imageUrl: './serviceImages/cat.jpg',
+          description: 'blah blah',
+          linkUrl: 'www.google.com'
+        },
+        /* copy from here */ 
+        {
+          title: 'Test item 3',
+          imageUrl: './serviceImages/cat.jpg',
+          description: 'blah blah',
+          linkUrl: 'www.google.com'
+        } 
+        /* copy to here */
+      ]
+    };
   }
-  render() { 
-     if(this.props.data){
-         var Services = this.props.data.Services.map(function(Services){
-           var projectImage = 'public/serviceImages'+Services.projectImage;
-           return <div key={Services.name} className="columns service-item">
-              <div className="item-wrap">
-               <a href={Services.url} title={Services.name}>
-                  <img  className="projectImage" alt={Services.title} src={projectImage} />
-                  <div className="overlay">
-                     <div className="service-item-meta">
-                    <h5>{Services.name}</h5>
-                        <p>{Services.description}</p>
-                     </div>
-                   </div>
-                 
-               </a>
-             </div>
-           </div>
-         })
-       }
-      return ( <div>{Services}</div> );
+
+  render() {
+    return (
+      <div className='row'>
+        {this.state.sections.map(({ id, ...otherSectionProps }) => (
+          <ServiceItem key={id} {...otherSectionProps} />
+        ))}
+      </div>
+    );
   }
 }
-export default Services 
+
+export default Services;

@@ -15,7 +15,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      ServiceItems: {}
+      Services: {}
     };
 
   }
@@ -26,7 +26,7 @@ class App extends Component {
       dataType:'json',
       cache: false,
       success: function(data){
-        this.setState({ServiceItems: data});
+        this.setState({ServiceData: data});
       }.bind(this),
       error: function(xhr, status, err){
         console.log(err);
@@ -49,7 +49,10 @@ render () {
   </div>
     <div className="viewthatchanges">
 <Route exact path="/" component={Home} />
-<Route path="/services" component={Services} data={this.state.resumeData.ServiceItem} />
+<Route
+  path='/services'
+  render={(props) => <Services {...props} />}
+/>
 <Route path="/blog" component={Blog} />
 <Route path="/contact" component={Contact} />
 

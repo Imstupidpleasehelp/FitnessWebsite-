@@ -26,16 +26,14 @@ body {
 
 }
 /* Home carosuel */ 
-.blogbox {
+.blogpreview {
   margin: 10px;
   margin-left: 5%;
   margin-right: 5%;
 
 }
 .blogitem {
-  float: left;
-  width: 25%;
-  margin: 2%;
+ float: left;
 }
 .blogimage {
   width: 100%;
@@ -137,8 +135,12 @@ body {
   background-image: url(./components/images/skyimage.jpeg);
   width: 85%;
   height: 20vh;
-  
- 
+}
+.testimonialtext {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  z-index: 1;
 }
 .meettitle {
   color: skyblue;
@@ -157,11 +159,7 @@ body {
 .meet {
   margin: 50px;
 }
-.testimonialtext {
-  font-size: 30px;
-  text-align: center;
-  font-weight: bolder;
-}
+/* Services page */ 
 .servicestitle{
   text-align: center;
   font-weight: bolder;
@@ -170,4 +168,8 @@ body {
 }
 .servicestext {
  font-size: 15px;
+}
+
+.servicesgrid {
+width: 20%;
 }

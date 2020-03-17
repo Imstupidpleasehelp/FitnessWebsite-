@@ -1,10 +1,10 @@
 import React from 'react'
 import Slidescroller from '../components/subcomponents/slidescroller' 
-import TestimonialScroller from  '../components/subcomponents/testimonialbox'
+import TestimonialScroller from  './subcomponents/testimonials'
 
 const Home = () => (
     <div>
-    <div><Slidescroller /></div><div className="homebio">
+    <div><h2>A preview from my blog </h2><Slidescroller /></div><div className="homebio">
     <h1 className="hometitle">Sky's teaching philosphy</h1>
     <p className="hometext"> SkyLimit Fitness is dedicated to helping athletes crush their goals – whether that be crossing the finish line for the first time or breaking the ribbon. With an emphasis on coach-athlete communication, injury prevention, and performance optimization, Coach Sky wants to help you find your happiest, healthiest self on the way to your race.  </p>
     <img className="skyphoto" src={require('./images/Sky.jpg')}></img>

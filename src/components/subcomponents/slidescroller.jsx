@@ -1,18 +1,19 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import Blogbox from '../subcomponents/blogboxes'
+import Blog from '../blog'
 
 const Sidescroller = () => (
-<Carousel className="blogbox">
+<Carousel className="blogpreview">
   <Carousel.Item>
-     <Blogbox />
+     <Blog />
   </Carousel.Item>
   <Carousel.Item>
-    <Blogbox /> 
+     <Blog />
   </Carousel.Item>
   <Carousel.Item>
-    <Blogbox /> 
+     <Blog />
   </Carousel.Item>
+  
   
 </Carousel>
 )
