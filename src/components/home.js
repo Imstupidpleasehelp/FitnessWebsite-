@@ -1,13 +1,13 @@
 import React from 'react'
 import Slidescroller from '../components/subcomponents/slidescroller' 
-import TestimonialScroller from  './subcomponents/testimonials'
+
 
 const Home = () => (
     <div>
-    <div><h2>A preview from my blog </h2><Slidescroller /></div><div className="homebio">
+    <div><h2>A preview from my blog </h2>OUT OF SERVICE</div><div className="homebio">
     <h1 className="hometitle">Sky's teaching philosphy</h1>
     <p className="hometext"> SkyLimit Fitness is dedicated to helping athletes crush their goals – whether that be crossing the finish line for the first time or breaking the ribbon. With an emphasis on coach-athlete communication, injury prevention, and performance optimization, Coach Sky wants to help you find your happiest, healthiest self on the way to your race.  </p>
-    <img className="skyphoto" src={require('./images/Sky.jpg')}></img>
+    <img className="skyphoto" alt="sky" src={require('./images/Sky.jpg')}></img>
     <h4>Coach Sky</h4>
     <br />
     </div>
@@ -26,7 +26,7 @@ const Home = () => (
     
     <div className="meet">
     <h2 className="meettitle">Meet Coach Sky</h2>
-    <img className="skybiophoto" src={require('./images/coachskybio.png')}></img>
+    <img className="skybiophoto" alt="sky" src={require('./images/coachskybio.png')}></img>
     <p className="skybio"> Hi, I’m Coach Sky! I’m a Triathlon and Run Coach based out of Spokane, WA/Coeur D’Alene, ID and coach virtually across the world.
 
 I am an Ironman Certified Coach, NASM Certified Personal Trainer, Certified Nutrition Coach with a Weight Loss Specialization.
@@ -52,10 +52,11 @@ When I’m not coaching or training myself, you’ll find me dreaming up cycling
    
     <div>
     <h1 className="testimonialtitle">Testimonials</h1>
-    <div className="Testimonials"><TestimonialScroller /></div>
+    <div className="Testimonials">HERE THERE ARE TESTIMONIALS</div>
 
     
     </div>
+    
 </div>
 )
 export default Home

@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+
 
 
 const ServiceItem = ({ title, imageUrl, description, linkUrl }) => (
@@ -13,4 +13,4 @@ const ServiceItem = ({ title, imageUrl, description, linkUrl }) => (
   </div>
 );
     
-export default withRouter(ServiceItem);
+export default ServiceItem;

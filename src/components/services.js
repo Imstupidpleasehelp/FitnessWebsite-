@@ -1,44 +1,62 @@
 import React from 'react';
+import $ from 'jquery';
 
-import ServiceItem from './serviceitem';
 
 class Services extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
-      sections: [
-        {
-          title: 'Test item 1',
-          imageUrl: './serviceImages/cat.jpg',
-          description: 'blah blah',
-          linkUrl: 'www.google.com'
-        },
-        {
-          title: 'Test item 2',
-          imageUrl: './serviceImages/cat.jpg',
-          description: 'blah blah',
-          linkUrl: 'www.google.com'
-        },
-        /* copy from here */ 
-        {
-          title: 'Test item 3',
-          imageUrl: './serviceImages/cat.jpg',
-          description: 'blah blah',
-          linkUrl: 'www.google.com'
-        } 
-        /* copy to here */
-      ]
+      loading: true,
+     serviceitems: {}
     };
   }
-
-  render() {
-    return (
-      <div className='row'>
-        {this.state.sections.map(({ id, ...otherSectionProps }) => (
-          <ServiceItem key={id} {...otherSectionProps} />
-        ))}
+  
+  componentDidMount() {
+    async function setthing() {
+    this.setState({loading: false})
+    }
+    setthing();
+  }
+render() {
+  const { loading, data } = this.state;
+  if (loading ) {
+    return (<p>loading...</p>)
+  }
+  if(this.props.data){
+    var serviceitems = this.props.data.serviceitems.map(function(serviceitems){
+      return <div key={serviceitems.title} className="columns portfolio-item">
+         <div className="item-wrap">
+             <div className="overlay">
+                <div className="portfolio-item-meta">
+               <h5>{serviceitems.title}</h5>
+                   <p>{serviceitems.category}</p>
+                </div>
+              </div>
+        </div>
       </div>
+    })
+  }
+  else 
+  {console.log('service item failed')}
+
+    return (
+      <section id="portfolio">
+
+      <div className="row">
+
+         <div className="twelve columns serviceitems">
+
+            <h1>Some services I offer</h1>
+
+            
+              {serviceitems}
+            </div>
+
+            
+          </div>
+    
+   </section>
     );
   }
 }
