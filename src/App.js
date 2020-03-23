@@ -20,26 +20,14 @@ class App extends Component {
   }
 
 
-  getResumeData() {
-    fetch('./addnewitems.json')
-    .then(function (data) {
-      return data.json();
-    })
-    .then(function (data) {
-    this.setState({propdata: data});
-    })
-    .catch(function (err) {
-      console.log('err');
-    });
-  }
-
-  /*
-   */ 
   
   
 
   componentDidMount(){
-    this.getResumeData();
+    fetch('/addnewitems.json')
+        .then(res => res.text())          
+        .then(text => console.log(text))
+     
   }
 
 render () {
