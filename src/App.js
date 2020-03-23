@@ -6,34 +6,37 @@ import Blog from './components/blog'
 import Services from './components/services'
 import Navbar from  './components/navbar'
 import Header from './components/header'
-import $ from 'jquery';
-import { Switch, Route, Router, Redirect, BrowserRouter } from 'react-router-dom';
+
+import {  Route, BrowserRouter } from 'react-router-dom';
 
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      loading: false,
-     serviceitems: {}
+     propdata: {}
     };
 
   }
 
-  getResumeData(){
-    $.ajax({
-      url:'/addnewitems.json',
-      dataType:'json',
-      cache: false,
-      success: function(data){
-        this.setState({serviceitems: data}); console.log('first page is ok')
-      }.bind(this),
-      error: function(xhr, status, err){
-        console.log(err);
-        alert(err);
-      }
+
+  getResumeData() {
+    fetch('./addnewitems.json')
+    .then(function (data) {
+      return data.json();
+    })
+    .then(function (data) {
+    this.setState({propdata: data});
+    })
+    .catch(function (err) {
+      console.log('err');
     });
   }
+
+  /*
+   */ 
+  
+  
 
   componentDidMount(){
     this.getResumeData();
@@ -50,7 +53,7 @@ render () {
     <div className="viewthatchanges" >
     <Route exact path="/" component={Home} />
     <Route path='/Services'
-  render={(props) => <Services {...props} serviceitems={this.state.data} />}
+  render={(props) => <Services {...props} propdata={this.state.propdata} />}
 />
 <Route path="/blog" component={Blog} />
 <Route path="/contact" component={Contact} />

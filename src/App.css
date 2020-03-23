@@ -173,3 +173,9 @@ body {
 .servicesgrid {
 width: 20%;
 }
+
+/* blog page */ 
+.blogimage {
+  width: 20%;
+  margin: 15px;
+}

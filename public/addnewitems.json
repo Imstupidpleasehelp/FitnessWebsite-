@@ -2,33 +2,33 @@
   "main":{
     "serviceitems": [
       {
-        "title":"Munch App",
-        "description":"A full food ordering app, made with react and redux",
+        "title":"Service 1",
+        "description":"WORKOUT",
         "image": "cat.jpg"
       },
       {
-        "title":"Mobile Weather App",
-        "category":"Not made for desktops, view on your phone for best experience",
+        "title":"Service 2",
+        "category":"yeah",
         "image": "cat.jpg"
       },
       {
-        "title":"Kittenfinder App",
-        "category":"A rolodex from a public JSON that randomly generates internet cats",
+        "title":"Service 3",
+        "category":"yeeeeah",
         "image": "cat.jpg"
       },
       {
-        "title":"Javascript calculator ",
-        "category":"A proof of concept",
+        "title":"Service 4",
+        "category":"wew",
         "image": "cat.jpg"
       },
       {
-        "title":"Javascript History quiz",
-        "category":"I am a former teacher, so this was more of a passion project that I could learn from.",
+        "title":"Service 5",
+        "category":"aaaaa",
         "image": "cat.jpg"
       },
       {
-        "title":"Javascript To do list",
-        "category":"Basic CRUD application",
+        "title":"Service 6",
+        "category":"asadasda",
         "image": "cat.jpg"
       }
     ]

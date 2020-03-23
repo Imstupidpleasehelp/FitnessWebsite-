@@ -1,6 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
-
 
 class Services extends React.Component {
   constructor(props) {
@@ -8,27 +6,29 @@ class Services extends React.Component {
 
     this.state = {
       loading: true,
-     serviceitems: {}
+     propdata: {}
     };
   }
-  
   componentDidMount() {
-    async function setthing() {
-    this.setState({loading: false})
+   async function getitem(){
+      
+      
     }
-    setthing();
+  getitem();
   }
+  
+
 render() {
-  const { loading, data } = this.state;
+  const { loading} = this.state;
   if (loading ) {
     return (<p>loading...</p>)
   }
-  if(this.props.data){
-    var serviceitems = this.props.data.serviceitems.map(function(serviceitems){
-      return <div key={serviceitems.title} className="columns portfolio-item">
-         <div className="item-wrap">
-             <div className="overlay">
-                <div className="portfolio-item-meta">
+  if(this.props.propdata){
+    var serviceitems = this.props.propdata.map(function(serviceitems){
+      return <div key={serviceitems.title} className="">
+         <div className="">
+             <div className="">
+                <div className="">
                <h5>{serviceitems.title}</h5>
                    <p>{serviceitems.category}</p>
                 </div>
@@ -38,14 +38,16 @@ render() {
     })
   }
   else 
-  {console.log('service item failed')}
+  return (
+    <h1>That's all, folks!</h1>
+  )
 
     return (
-      <section id="portfolio">
+      <section id="serviceitems">
 
-      <div className="row">
+      <div className="">
 
-         <div className="twelve columns serviceitems">
+         <div className="serviceitems">
 
             <h1>Some services I offer</h1>
 

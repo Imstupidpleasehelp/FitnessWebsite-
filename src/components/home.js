@@ -52,7 +52,10 @@ When I’m not coaching or training myself, you’ll find me dreaming up cycling
    
     <div>
     <h1 className="testimonialtitle">Testimonials</h1>
-    <div className="Testimonials">HERE THERE ARE TESTIMONIALS</div>
+    <div className="Testimonials">
+        
+
+    </div>
 
     
     </div>
