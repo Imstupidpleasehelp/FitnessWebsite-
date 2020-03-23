@@ -10,8 +10,8 @@ class Services extends React.Component {
     };
   }
   componentDidMount() {
-   async function getitem(){
-      
+   async function getitem(propdata){
+      console.log(propdata)
       
     }
   getitem();
@@ -39,7 +39,7 @@ render() {
   }
   else 
   return (
-    <h1>That's all, folks!</h1>
+    <h1>Something has gone wrong</h1>
   )
 
     return (

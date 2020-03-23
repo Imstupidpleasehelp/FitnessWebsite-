@@ -14,7 +14,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-     propdata: {}
+     propdata: null
     };
 
   }
@@ -25,10 +25,22 @@ class App extends Component {
 
   componentDidMount(){
     fetch('/addnewitems.json')
-        .then(res => res.text())          
-        .then(text => console.log(text))
-     
-  }
+       .then(res => res.json())          
+           .then(res =>{
+      this.setState({
+      ...this, propdata: res,
+      })
+       function getitem(propdata){
+        console.log(propdata)
+        
+      }
+    getitem();
+    }
+    
+)
+    
+}
+    
 
 render () {
   return (
