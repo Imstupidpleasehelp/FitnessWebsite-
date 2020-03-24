@@ -4,32 +4,32 @@
       {
         "title":"Service 1",
         "description":"WORKOUT",
-        "image": "cat.jpg"
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 2",
-        "category":"yeah",
-        "image": "cat.jpg"
+        "description":"yeah",
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 3",
-        "category":"yeeeeah",
-        "image": "cat.jpg"
+        "description":"yeeeeah",
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 4",
-        "category":"wew",
-        "image": "cat.jpg"
+        "description":"wew",
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 5",
-        "category":"aaaaa",
-        "image": "cat.jpg"
+        "description":"aaaaa",
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 6",
-        "category":"asadasda",
-        "image": "cat.jpg"
+        "description":"asadasda",
+        "image": "./serviceimages/cat.jpg"
       }
     ]
   },

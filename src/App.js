@@ -16,30 +16,18 @@ class App extends Component {
     this.state = {
      propdata: null
     };
-
   }
 
-
-  
-  
-
-  componentDidMount(){
-    fetch('/addnewitems.json')
-       .then(res => res.json())          
-           .then(res =>{
-      this.setState({
-      ...this, propdata: res,
-      })
-       function getitem(propdata){
-        console.log(propdata)
-        
-      }
-    getitem();
-    }
-    
-)
-    
-}
+  componentDidMount() {
+    fetch("/addnewitems.json")
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          ...this,
+          propdata: res
+        });
+      });
+  }
     
 
 render () {

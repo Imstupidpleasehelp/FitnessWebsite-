@@ -9,38 +9,30 @@ class Services extends React.Component {
      propdata: {}
     };
   }
-  componentDidMount() {
-   async function getitem(propdata){
-      console.log(propdata)
-      
-    }
-  getitem();
-  }
+ 
   
 
 render() {
-  const { loading} = this.state;
+  /*const { loading} = this.state;
   if (loading ) {
     return (<p>loading...</p>)
-  }
-  if(this.props.propdata){
-    var serviceitems = this.props.propdata.map(function(serviceitems){
-      return <div key={serviceitems.title} className="">
-         <div className="">
-             <div className="">
-                <div className="">
-               <h5>{serviceitems.title}</h5>
-                   <p>{serviceitems.category}</p>
-                </div>
+  } */
+  if (this.props.propdata) {
+    var serviceitems = this.props.propdata.main.serviceitems.map(function(
+      serviceitems
+    ) {
+      return (
+        <div key={serviceitems.title} className="">
+          
+              <div className="">
+                <img src={serviceitems.image} alt={serviceitems.title}></img>
+                <h5>{serviceitems.title}</h5>
+                <p>{serviceitems.description}</p>
               </div>
         </div>
-      </div>
-    })
-  }
-  else 
-  return (
-    <h1>Something has gone wrong</h1>
-  )
+      );
+    });
+  } else return <h1>Something has gone wrong, contact your software guy</h1>;
 
     return (
       <section id="serviceitems">
