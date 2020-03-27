@@ -9,7 +9,6 @@ import Header from './components/header'
 
 import {  Route, BrowserRouter } from 'react-router-dom';
 
-
 class App extends Component {
   constructor(props){
     super(props);
@@ -39,11 +38,15 @@ render () {
     <Navbar />
   </div>
     <div className="viewthatchanges" >
-    <Route exact path="/" component={Home} />
+    <Route exact path='/'
+  render={(props) => <Home {...props} propdata={this.state.propdata} />}
+/>
     <Route path='/Services'
   render={(props) => <Services {...props} propdata={this.state.propdata} />}
 />
-<Route path="/blog" component={Blog} />
+<Route path='/Blog'
+  render={(props) => <Blog {...props} propdata={this.state.propdata} />}
+/>
 <Route path="/contact" component={Contact} />
     </div>
   </div>

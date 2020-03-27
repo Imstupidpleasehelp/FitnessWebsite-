@@ -122,6 +122,7 @@ body {
   margin-bottom: 100px;
   text-align: center;
 }
+/* testmonials */
 .testimonialtitle {
   font-size: 48px;
   text-align: center;
@@ -130,18 +131,36 @@ body {
   color: skyblue;
 }
 .Testimonials {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(./components/images/skyimage.jpeg);
-  width: 85%;
-  height: 20vh;
+  position: relative;
+ margin-left: 5%;
+ margin-right: 5%;
+ max-width: 100%;
+ max-height: 100%;
 }
 .testimonialtext {
-  font-size: 30px;
-  text-align: center;
-  font-weight: bolder;
-  z-index: 1;
+ margin-right: 10%;
+ 
+ text-align: right;
+ position: absolute;
+ top: 8px;
+  right: 16px;
 }
+.testimonialauthor {
+  
+ z-index: 1;
+ text-align: right;
+ 
+}
+.testimonialimage {
+ position: relative;
+ width: 50%;
+ height: 15%;
+
+}
+
+
+
+
 .meettitle {
   color: skyblue;
   font-weight: bolder;
@@ -153,7 +172,9 @@ body {
 }
 .skybio {
   font-size: 20px;
-  width: 100%;
+ margin: 5%;
+ margin-left: 5%;
+ 
  
 }
 .meet {

@@ -5,7 +5,7 @@ class Services extends React.Component {
     super(props);
 
     this.state = {
-      loading: true,
+      
      propdata: {}
     };
   }
@@ -13,21 +13,19 @@ class Services extends React.Component {
   
 
 render() {
-  /*const { loading} = this.state;
-  if (loading ) {
-    return (<p>loading...</p>)
-  } */
+  
   if (this.props.propdata) {
     var serviceitems = this.props.propdata.main.serviceitems.map(function(
       serviceitems
     ) {
       return (
-        <div key={serviceitems.title} className="">
+        <div key={serviceitems.title} className="serviceitemlayout">
           
-              <div className="">
+              <div className="serviceitem">
                 <img src={serviceitems.image} alt={serviceitems.title}></img>
                 <h5>{serviceitems.title}</h5>
                 <p>{serviceitems.description}</p>
+                <button>Add to cart</button>
               </div>
         </div>
       );
@@ -35,7 +33,7 @@ render() {
   } else return <h1>Something has gone wrong, contact your software guy</h1>;
 
     return (
-      <section id="serviceitems">
+      <section >
 
       <div className="">
 
