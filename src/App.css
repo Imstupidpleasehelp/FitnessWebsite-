@@ -185,14 +185,19 @@ body {
   text-align: center;
   font-weight: bolder;
   color: skyblue;
+  font-size: 54px;
   margin: 3%;
 }
-.servicestext {
- font-size: 15px;
+.service-item {
+  width: 100%;
+  float: left;
+}
+.service-item-image {
+  width: 25%;
 }
 
-.servicesgrid {
-width: 20%;
+.service-item-layout {
+height: 30%;
 }
 
 /* blog page */ 

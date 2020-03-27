@@ -19,10 +19,10 @@ render() {
       serviceitems
     ) {
       return (
-        <div key={serviceitems.title} className="serviceitemlayout">
+        <div key={serviceitems.key} className="service-item-layout container">
           
-              <div className="serviceitem">
-                <img src={serviceitems.image} alt={serviceitems.title}></img>
+              <div className="col-md- service-item">
+                <img src={serviceitems.image} alt={serviceitems.title} className="service-item-image"></img>
                 <h5>{serviceitems.title}</h5>
                 <p>{serviceitems.description}</p>
                 <button>Add to cart</button>
@@ -37,9 +37,9 @@ render() {
 
       <div className="">
 
-         <div className="serviceitems">
+         <div className="">
 
-            <h1>Some services I offer</h1>
+            <h1 className="servicestitle">Some services I offer</h1>
 
             
               {serviceitems}
