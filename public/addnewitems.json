@@ -44,31 +44,31 @@
       {
         "title":"Blog item 1",
         "tagline":"Keep this short",
-        "fulltext": "here's where you put the full text of your blog item, ideally this won't be shown unless you click on the item. If it's always showing, I've done something wrong and it broke. Anyway, I am just typing a bunch of stuff here so it can look similar to a regular blog post. BLAH BLAH BLAH",
-        "image":"./serviceimages/cat.jpg"
-      },
-      {
-        "title":"Blog item 1",
-        "tagline":"Keep this short",
-        "fulltext": "here's where you put the full text of your blog item, ideally this won't be shown unless you click on the item. If it's always showing, I've done something wrong and it broke. Anyway, I am just typing a bunch of stuff here so it can look similar to a regular blog post. BLAH BLAH BLAH",
-        "image":"./serviceimages/cat.jpg"
-      },
-      {
-        "title":"Blog item 1",
-        "tagline":"Keep this short",
-        "fulltext": "here's where you put the full text of your blog item, ideally this won't be shown unless you click on the item. If it's always showing, I've done something wrong and it broke. Anyway, I am just typing a bunch of stuff here so it can look similar to a regular blog post. BLAH BLAH BLAH",
+        "fulltext": "BLOGSTUFF",
         "image":"./serviceimages/cat.jpg"
       },
       {
         "title":"Blog item 2",
-        "tagline":"Keep this short, and catchy",
-        "fulltext": "here's where you put the full text of your blog item, ideally this won't be shown unless you click on the item. If it's always showing, I've done something wrong and it broke. Anyway, I am just typing a bunch of stuff here so it can look similar to a regular blog post. BLAH BLAH BLAH",
+        "tagline":"Keep this short",
+        "fulltext": "BLOGSTUFF",
         "image":"./serviceimages/cat.jpg"
       },
       {
         "title":"Blog item 3",
         "tagline":"Keep this short",
-        "fulltext": "here's where you put the full text of your blog item, ideally this won't be shown unless you click on the item. If it's always showing, I've done something wrong and it broke. Anyway, I am just typing a bunch of stuff here so it can look similar to a regular blog post. BLAH BLAH BLAH",
+        "fulltext": "BLOGSTUFF",
+        "image":"./serviceimages/cat.jpg"
+      },
+      {
+        "title":"Blog item 4",
+        "tagline":"Keep this short, and catchy",
+        "fulltext": "BLOGSTUFF",
+        "image":"./serviceimages/cat.jpg"
+      },
+      {
+        "title":"Blog item 5",
+        "tagline":"Keep this short",
+        "fulltext": "BLOGSTUFF",
         "image":"./serviceimages/cat.jpg"
       }
 

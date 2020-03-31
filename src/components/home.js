@@ -1,16 +1,12 @@
 import React from 'react'
 import Carousel from 'nuka-carousel';
+import Imageshowoff from './subcomponents/imageshowoff'
 
 const Home = () => (
     <div>
-    <div className="homebio">
-    <h1 className="hometitle">Sky's teaching philosphy</h1>
-    <p className="hometext"> SkyLimit Fitness is dedicated to helping athletes crush their goals – whether that be crossing the finish line for the first time or breaking the ribbon. With an emphasis on coach-athlete communication, injury prevention, and performance optimization, Coach Sky wants to help you find your happiest, healthiest self on the way to your race.  </p>
-    <img className="skyphoto" alt="sky" src={require('./images/Sky.jpg')}></img>
-    <h4>Coach Sky</h4>
-    <br />
-    </div>
-    <h3 className="hometagline">  SkyLimit Fitness will keep you accountable for your goals and help you maintain focus and balance. Let us help you unlock your potential and find your happiest, healthiest self. </h3>
+      
+      <h3 className="hometagline">  SkyLimit Fitness will keep you accountable for your goals and help you maintain focus and balance. Let us help you unlock your potential and find your happiest, healthiest self. </h3>
+      <Imageshowoff className="homeslider" />
     <div className="homeinfo">
     <h3 className="homesubtitle">What sets Skylimit Fitness apart? </h3>
     <div className="hometext">SkyLimit Fitness doesn’t just create training plans! <br />  We emphasize whole-body health by looking at the three building blocks of your wellness:
@@ -18,11 +14,8 @@ const Home = () => (
       we help you forge a lifestyle geared toward a healthy balance between your fitness, health and wellness goals. With communication sessions 
       dedicated to your short-term goals and progress.</div>
       
-    </div>
-
-
-
-    
+    </div> 
+    <div className="homebio"></div>
     <div className="meet">
     <h2 className="meettitle">Meet Coach Sky</h2>
     <img className="skybiophoto" alt="sky" src={require('./images/coachskybio.png')}></img>
@@ -34,6 +27,26 @@ I am a lifelong swimmer with a love for adventurous racing. My race history is d
 
 When I’m not coaching or training myself, you’ll find me dreaming up cycling inventions and trying to turn my fluffy, loopy doodles into dignified runners.</p>
     </div>
+
+
+
+
+
+
+    <div className="homebio">
+    <h1 className="hometitle">Sky's teaching philosphy</h1>
+    <p className="hometext"> SkyLimit Fitness is dedicated to helping athletes crush their goals – whether that be crossing the finish line for the first time or breaking the ribbon. With an emphasis on coach-athlete communication, injury prevention, and performance optimization, Coach Sky wants to help you find your happiest, healthiest self on the way to your race.  </p>
+    <img className="skyphoto" alt="sky" src={require('./images/Sky.jpg')}></img>
+    <h4>Coach Sky</h4>
+    <br />
+   
+    </div>
+    
+
+
+
+    
+    
 
 
 

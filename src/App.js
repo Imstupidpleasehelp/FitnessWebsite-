@@ -34,7 +34,7 @@ render () {
    <BrowserRouter>
     <div className="App">
   <div className="fixedview"> 
-    <Header /> 
+   <Header />
     <Navbar />
   </div>
     <div className="viewthatchanges" >

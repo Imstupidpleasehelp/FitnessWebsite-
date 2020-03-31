@@ -29,19 +29,21 @@ render() {
           </div>
         );
       });
-    } else return <h1>Something has gone wrong, contact your software guy</h1>;
+    } else return <h1>Loading...</h1>;
   
       return (
-        <div className="blogtagline">
+        <div className="blogtitle">
   <h1>My blog</h1>
-           <div className="blogitems">
-  
+           <div className="col-xl-8 bloggrid">
+           
+
+         <div className="row blogbox">
               
   
               
                 {blogitems}
               </div>
-  
+  </div>
               
             </div>
       )

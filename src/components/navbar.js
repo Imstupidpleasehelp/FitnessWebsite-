@@ -1,12 +1,15 @@
 import React from 'react'
-import  {Link, NavLink } from 'react-router-dom'
+import  { NavLink } from 'react-router-dom'
 
 const Navbar = () => (
-    <div><nav className="navbar navbar-light">
-  <Link to="/" className="navbar-brand navbarlabel">Home</Link>
-  <NavLink to="/Services" className="navbar-brand navbarlabel">Services and Products</NavLink>
-  <NavLink to="/Blog" className="navbar-brand navbarlabel">Blog</NavLink>
-  <NavLink to="/Contact" className="navbar-brand navbarlabel">Contact</NavLink>
+    <div>
+      
+      <nav className="navbar">
+        
+  <NavLink to="/" > <img className="logo" alt="logo" src={require('./images/logo.png')} /></NavLink>
+  <NavLink to="/Services" className=" navbarlabel">Services and Products</NavLink>
+  <NavLink to="/Blog" className=" navbarlabel">Blog</NavLink>
+  <NavLink to="/Contact" className="navbarlabel">Contact</NavLink>
     </nav>
 </div>
 )

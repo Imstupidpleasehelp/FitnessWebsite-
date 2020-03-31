@@ -19,27 +19,28 @@ render() {
       serviceitems
     ) {
       return (
-        <div key={serviceitems.key} className="service-item-layout container">
-          
-              <div className="col-md- service-item">
+        <div key={serviceitems.key} >
+          <div >
+              <div className="service-item-item">
                 <img src={serviceitems.image} alt={serviceitems.title} className="service-item-image"></img>
-                <h5>{serviceitems.title}</h5>
-                <p>{serviceitems.description}</p>
-                <button>Add to cart</button>
+                <h5 className="service-item-title" >{serviceitems.title}</h5>
+                <p className="service-item-description">{serviceitems.description}</p>
+                <button className="service-item-button">Add to cart</button>
+              </div>
               </div>
         </div>
       );
     });
-  } else return <h1>Something has gone wrong, contact your software guy</h1>;
+  } else return <h1>Loading...</h1>;
 
     return (
       <section >
+<h1 className="servicestitle">Some services I offer</h1>
+      <div className="col-xl-12 ">
 
-      <div className="">
+         <div className="row servicebox">
 
-         <div className="">
-
-            <h1 className="servicestitle">Some services I offer</h1>
+            
 
             
               {serviceitems}
