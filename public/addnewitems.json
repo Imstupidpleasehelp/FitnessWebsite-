@@ -4,38 +4,38 @@
       {
         "title":"Service 1",
         "description":"WORKOUT",
-        "image": "./serviceimages/cat.jpg",
-        "key": 1
+        "price": "$10",
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 2",
         "description":"yeah",
-        "image": "./serviceimages/cat.jpg",
-        "key": 2
+        "price": "$35",
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 3",
         "description":"yeeeeah",
-        "image": "./serviceimages/cat.jpg",
-        "key": 3
+        "price": "$5",
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 4",
         "description":"wew",
-        "image": "./serviceimages/cat.jpg",
-        "key": 4
+        "price": "$100",
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 5",
         "description":"aaaaa",
-        "image": "./serviceimages/cat.jpg",
-        "key": 5
+        "price": "$100,000",
+        "image": "./serviceimages/cat.jpg"
       },
       {
         "title":"Service 6",
         "description":"asadasda",
-        "image": "./serviceimages/cat.jpg",
-        "key": 6
+        "price": "$60",
+        "image": "./serviceimages/cat.jpg"
       }
     ]
   },
@@ -44,31 +44,31 @@
       {
         "title":"Blog item 1",
         "tagline":"Keep this short",
-        "fulltext": "BLOGSTUFF",
+        "fulltext": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "image":"./serviceimages/cat.jpg"
       },
       {
         "title":"Blog item 2",
         "tagline":"Keep this short",
-        "fulltext": "BLOGSTUFF",
+        "fulltext": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "image":"./serviceimages/cat.jpg"
       },
       {
         "title":"Blog item 3",
         "tagline":"Keep this short",
-        "fulltext": "BLOGSTUFF",
+        "fulltext": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "image":"./serviceimages/cat.jpg"
       },
       {
         "title":"Blog item 4",
         "tagline":"Keep this short, and catchy",
-        "fulltext": "BLOGSTUFF",
+        "fulltext": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "image":"./serviceimages/cat.jpg"
       },
       {
         "title":"Blog item 5",
         "tagline":"Keep this short",
-        "fulltext": "BLOGSTUFF",
+        "fulltext": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "image":"./serviceimages/cat.jpg"
       }
 

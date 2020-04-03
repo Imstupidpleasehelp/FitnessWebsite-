@@ -19,13 +19,15 @@ render() {
       serviceitems
     ) {
       return (
-        <div key={serviceitems.key} >
+        <div key={serviceitems.title} >
           <div >
               <div className="service-item-item">
                 <img src={serviceitems.image} alt={serviceitems.title} className="service-item-image"></img>
+                <div className="service-item-text">
                 <h5 className="service-item-title" >{serviceitems.title}</h5>
+                <p className="service-item-price">{serviceitems.price}</p>
                 <p className="service-item-description">{serviceitems.description}</p>
-                <button className="service-item-button">Add to cart</button>
+                <button className="service-item-button btn btn-info">Add to cart</button></div>
               </div>
               </div>
         </div>

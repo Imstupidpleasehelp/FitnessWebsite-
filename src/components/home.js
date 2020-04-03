@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Carousel from 'nuka-carousel';
 import Imageshowoff from './subcomponents/imageshowoff'
+
 
 const Home = () => (
     <div>
@@ -64,9 +65,7 @@ When I’m not coaching or training myself, you’ll find me dreaming up cycling
     <div>
     <h1 className="testimonialtitle">Testimonials</h1>
     <div className="Testimonials">
-    <Carousel
-    
-    >
+    <Carousel>
       <div>
 <img className="testimonialimage" alt='' src="./serviceimages/yogabridge.jpg"></img>
         <h4 className="testimonialtext">"Skyler helped me reach a PR for my Sprint race and Ironman 70.3. I had over a 1 hour improvement for the Ironman 70.3 race. She would jump in and swim, run, or bike with me and not just tell me what to do. She believed in me more than I did which made me push even harder.  She is very positive, patient, and knows when she needs to be tough. I would highly recommend her as a coach!"
@@ -94,5 +93,5 @@ When I’m not coaching or training myself, you’ll find me dreaming up cycling
     </div>
     
 </div>
-    )
-export default Home;
+    );
+export default Home

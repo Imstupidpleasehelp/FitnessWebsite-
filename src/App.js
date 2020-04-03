@@ -6,7 +6,6 @@ import Blog from './components/blog'
 import Services from './components/services'
 import Navbar from  './components/navbar'
 import Header from './components/header'
-
 import {  Route, BrowserRouter } from 'react-router-dom';
 
 class App extends Component {
@@ -34,7 +33,8 @@ render () {
    <BrowserRouter>
     <div className="App">
   <div className="fixedview"> 
-   <Header />
+    <Header />
+   
     <Navbar />
   </div>
     <div className="viewthatchanges" >

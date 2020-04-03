@@ -6,7 +6,7 @@ const Navbar = () => (
       
       <nav className="navbar">
         
-  <NavLink to="/" > <img className="logo" alt="logo" src={require('./images/logo.png')} /></NavLink>
+  <NavLink to="/" > <p className="homebuttontext">Home</p></NavLink>
   <NavLink to="/Services" className=" navbarlabel">Services and Products</NavLink>
   <NavLink to="/Blog" className=" navbarlabel">Blog</NavLink>
   <NavLink to="/Contact" className="navbarlabel">Contact</NavLink>

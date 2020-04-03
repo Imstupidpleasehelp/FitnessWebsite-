@@ -23,6 +23,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.homebuttontext {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  width: 100px;
+}
 .slidelabel {
   color: black;
  margin-left: 0px;
@@ -45,8 +51,8 @@ body {
   padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.6s; /* Adds a transition effect when the padding is decreased */
   position: fixed !important;/* Sticky/fixed navbar */
-  width: 102%;
-  margin-left: -3%;
+  width: 98%;
+  margin-left: 0;
   margin-right: 0%;
   top: 0; /* At the top */
   z-index: 99;
@@ -216,24 +222,31 @@ body {
 
 }
 .service-item-item {
- margin: 5%;
+ width: 35vw;
 }
 .servicebox {
  margin: 15%;
+}
+.service-item-text {
+  text-align: center;
+}
+.service-item-image {
+  width: 60%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
 /* blog page */ 
 .blogtitle {
-  margin-bottom: -8%;
+  margin-bottom: 5%;
   text-align: center;
   color: skyblue;
   font-size: 48px;
   font-weight: bolder;
-}
-.imageshowoff {
-  width: 50%;
-  height: 60%;
 }
 .bloggrid {
   margin-left: auto;
@@ -241,4 +254,11 @@ body {
 }
 .blogimage {
   height: 500%;
+}
+.blog-item-tagline {
+  cursor: pointer;
+}
+.blog-item-fulltext {
+  font-size: 16px;
+  
 }

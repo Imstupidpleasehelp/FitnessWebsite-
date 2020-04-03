@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Collapsible from 'react-collapsible';
+import { GoPlus } from 'react-icons/go';
 
  
-class Blog extends React.Component {
+class Blog extends Component {
     constructor() {
       super();
   
@@ -21,10 +23,12 @@ render() {
         return (
           <div key={blogitems.title} className="">
             
-                <div className="">
-                  <img src={blogitems.image} alt={blogitems.title}></img> 
-                  <h5>{blogitems.tagline}</h5>
-                  <p>{blogitems.fulltext}</p>
+                <div className="blog-item">
+                  <img src={blogitems.image} className="blog-image" alt={blogitems.title}></img> 
+                 
+                  <Collapsible className="blog-item-tagline" trigger={blogitems.tagline}  >  <GoPlus/>
+                  <p className="blog-item-fulltext">{blogitems.fulltext}</p>
+                </Collapsible>
                 </div>
           </div>
         );
@@ -34,7 +38,7 @@ render() {
       return (
         <div className="blogtitle">
   <h1>My blog</h1>
-           <div className="col-xl-8 bloggrid">
+           <div className="col-xl-12 bloggrid">
            
 
          <div className="row blogbox">
