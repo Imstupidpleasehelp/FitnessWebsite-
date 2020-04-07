@@ -6,13 +6,16 @@ import Blog from './components/blog'
 import Services from './components/services'
 import Navbar from  './components/navbar'
 import Header from './components/header'
+import Cart from  './components/Cart'
 import {  Route, BrowserRouter } from 'react-router-dom';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-     propdata: null
+     propdata: null,
+     CartAmount: null,
+     ChangeCartAmount: null
     };
   }
 
@@ -28,26 +31,30 @@ class App extends Component {
   }
     
 
-render () {
+render () 
+{
+
   return (
    <BrowserRouter>
     <div className="App">
   <div className="fixedview"> 
     <Header />
    
-    <Navbar />
+    <Navbar CartAmount={this.state.CartAmount} />
+    
   </div>
     <div className="viewthatchanges" >
     <Route exact path='/'
   render={(props) => <Home {...props} propdata={this.state.propdata} />}
 />
     <Route path='/Services'
-  render={(props) => <Services {...props} propdata={this.state.propdata} />}
+  render={(props) => <Services {...props} propdata={this.state.propdata} CartAmount={this.state.CartAmount} ChangeCartAmount={this.state.ChangeCartAmount} />}
 />
 <Route path='/Blog'
   render={(props) => <Blog {...props} propdata={this.state.propdata} />}
 />
 <Route path="/contact" component={Contact} />
+<Route path="/cart" component={Cart} />
     </div>
   </div>
   </BrowserRouter>

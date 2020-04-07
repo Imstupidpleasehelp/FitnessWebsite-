@@ -3,7 +3,14 @@ import Carousel from 'nuka-carousel';
 import Imageshowoff from './subcomponents/imageshowoff'
 
 
-const Home = () => (
+class Home extends Component {
+  state = {  }
+  render( ) 
+  
+  { 
+  
+    return ( 
+    
     <div>
       
       <h3 className="hometagline">  SkyLimit Fitness will keep you accountable for your goals and help you maintain focus and balance. Let us help you unlock your potential and find your happiest, healthiest self. </h3>
@@ -93,5 +100,10 @@ When I’m not coaching or training myself, you’ll find me dreaming up cycling
     </div>
     
 </div>
-    );
+   );
+  }
+}
+ 
+
+    
 export default Home

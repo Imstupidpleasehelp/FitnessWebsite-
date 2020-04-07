@@ -5,15 +5,21 @@ class Services extends React.Component {
     super(props);
 
     this.state = {
-      
-     propdata: {}
+      CartAmount: {},
+     propdata: {},
+     ChangeCartAmount: {}
     };
   }
- 
+ componentDidMount() {
+   console.log(this.props.CartAmount) 
+ }
   
 
 render() {
-  
+  function addtocart() {
+
+  }
+
   if (this.props.propdata) {
     var serviceitems = this.props.propdata.main.serviceitems.map(function(
       serviceitems
@@ -27,7 +33,7 @@ render() {
                 <h5 className="service-item-title" >{serviceitems.title}</h5>
                 <p className="service-item-price">{serviceitems.price}</p>
                 <p className="service-item-description">{serviceitems.description}</p>
-                <button className="service-item-button btn btn-info">Add to cart</button></div>
+                <button onClick={addtocart} className=" service-item-button btn btn-info">Add to cart</button></div>
               </div>
               </div>
         </div>
