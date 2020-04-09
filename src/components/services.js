@@ -1,24 +1,23 @@
-import React from 'react';
+import React from "react";
+
+import "bootstrap/dist/css/bootstrap.css";
+import "animate.css/animate.min.css";
+import "font-awesome/css/font-awesome.min.css";
+
 
 class Services extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      CartAmount: {},
-     propdata: {},
-     ChangeCartAmount: {}
+  
+     propdata: {}
     };
   }
- componentDidMount() {
-   console.log(this.props.CartAmount) 
- }
+ 
   
 
 render() {
-  function addtocart() {
-
-  }
 
   if (this.props.propdata) {
     var serviceitems = this.props.propdata.main.serviceitems.map(function(
@@ -31,9 +30,9 @@ render() {
                 <img src={serviceitems.image} alt={serviceitems.title} className="service-item-image"></img>
                 <div className="service-item-text">
                 <h5 className="service-item-title" >{serviceitems.title}</h5>
-                <p className="service-item-price">{serviceitems.price}</p>
+                <p className="service-item-price">${serviceitems.price}</p>
                 <p className="service-item-description">{serviceitems.description}</p>
-                <button onClick={addtocart} className=" service-item-button btn btn-info">Add to cart</button></div>
+                <button onClick={this.props.updateCart} className="service-item-button btn btn-info">Add to cart</button></div>
               </div>
               </div>
         </div>

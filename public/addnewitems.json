@@ -4,38 +4,44 @@
       {
         "title":"Service 1",
         "description":"WORKOUT",
-        "price": "$10",
-        "image": "./serviceimages/cat.jpg"
+        "price": 10,
+        "image": "./serviceimages/cat.jpg",
+        "inCart": false
       },
       {
         "title":"Service 2",
         "description":"yeah",
-        "price": "$35",
-        "image": "./serviceimages/cat.jpg"
+        "price": 35,
+        "image": "./serviceimages/cat.jpg",
+        "inCart": false
       },
       {
         "title":"Service 3",
         "description":"yeeeeah",
-        "price": "$5",
-        "image": "./serviceimages/cat.jpg"
+        "price": 5,
+        "image": "./serviceimages/cat.jpg",
+        "inCart": false
       },
       {
         "title":"Service 4",
         "description":"wew",
-        "price": "$100",
-        "image": "./serviceimages/cat.jpg"
+        "price": 120,
+        "image": "./serviceimages/cat.jpg",
+        "inCart": false
       },
       {
         "title":"Service 5",
         "description":"aaaaa",
-        "price": "$100,000",
-        "image": "./serviceimages/cat.jpg"
+        "price": 100,
+        "image": "./serviceimages/cat.jpg",
+        "inCart": false
       },
       {
         "title":"Service 6",
         "description":"asadasda",
-        "price": "$60",
-        "image": "./serviceimages/cat.jpg"
+        "price": 60,
+        "image": "./serviceimages/cat.jpg",
+        "inCart": false
       }
     ]
   },

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Collapsible from 'react-collapsible';
-import { GoPlus } from 'react-icons/go';
 
  
 class Blog extends Component {
@@ -25,8 +24,9 @@ render() {
             
                 <div className="blog-item">
                   <img src={blogitems.image} className="blog-image" alt={blogitems.title}></img> 
+                  
                  
-                  <Collapsible className="blog-item-tagline" trigger={blogitems.tagline}  >  <GoPlus/>
+                  <Collapsible className="blog-item-tagline" trigger={blogitems.tagline}>
                   <p className="blog-item-fulltext">{blogitems.fulltext}</p>
                 </Collapsible>
                 </div>
