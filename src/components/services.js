@@ -1,5 +1,6 @@
 import React from "react";
 
+import Collapsible from 'react-collapsible';
 import "bootstrap/dist/css/bootstrap.css";
 import "animate.css/animate.min.css";
 import "font-awesome/css/font-awesome.min.css";
@@ -26,13 +27,20 @@ render() {
       return (
         <div key={serviceitems.title} >
           <div >
-              <div className="service-item-item">
-                <img src={serviceitems.image} alt={serviceitems.title} className="service-item-image"></img>
-                <div className="service-item-text">
-                <h5 className="service-item-title" >{serviceitems.title}</h5>
-                <p className="service-item-price">${serviceitems.price}</p>
+              <div className="cf ">
+              <article className="fl w-50 w-20-ns tc pv5 bg-black-05" > 
+              <div className="">
+                <img src={serviceitems.image} alt={serviceitems.title} width="100vh" height="100vh" className=""></img>
+                </div>
+                <div className="">
+                <h5 className="" >{serviceitems.title}</h5>
+                
+                <Collapsible trigger={<p className="readmore">Read more</p>}> 
                 <p className="service-item-description">{serviceitems.description}</p>
-                <button onClick={this.props.updateCart} className="service-item-button btn btn-info">Add to cart</button></div>
+                <p className="service-item-price">${serviceitems.price}</p><button className="service-item-button btn btn-info">Add to cart</button>
+                </Collapsible>
+                </div>
+                </article>
               </div>
               </div>
         </div>

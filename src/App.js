@@ -61,8 +61,7 @@ render (
   render={(props) => <Home {...props} propdata={this.state.propdata} />}
 />
     <Route path='/Services'
-  render={(props) => <Services {...props} propdata={this.state.propdata} updateCart={this.updateCart} 
-         cartAmount={this.state.cartAmount} />}
+  render={(props) => <Services {...props} propdata={this.state.propdata}  />}
 />
 <Route path='/Blog'
   render={(props) => <Blog {...props} propdata={this.state.propdata} />}

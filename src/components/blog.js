@@ -20,10 +20,10 @@ render() {
         blogitems
       ) {
         return (
-          <div key={blogitems.title} className="">
+          <div key={blogitems.title} className="fl w-50 w-25-l link overflow-hidden">
             
                 <div className="blog-item">
-                  <img src={blogitems.image} className="blog-image" alt={blogitems.title}></img> 
+                  <img src={blogitems.image} className="grow aspect-ratio--4x6" alt={blogitems.title}></img> 
                   
                  
                   <Collapsible className="blog-item-tagline" trigger={blogitems.tagline}>

@@ -3,7 +3,7 @@
     "serviceitems": [
       {
         "title":"Service 1",
-        "description":"WORKOUT",
+        "description":"This is wear you would describe what this item is.",
         "price": 10,
         "image": "./serviceimages/cat.jpg",
         "inCart": false
@@ -40,7 +40,7 @@
         "title":"Service 6",
         "description":"asadasda",
         "price": 60,
-        "image": "./serviceimages/cat.jpg",
+        "image": "./serviceimages/bikeonroad.JPG",
         "inCart": false
       }
     ]
