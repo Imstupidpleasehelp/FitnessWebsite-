@@ -4,6 +4,7 @@
       {
         "title":"Service 1",
         "description":"This is wear you would describe what this item is.",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 10,
         "image": "./serviceimages/cat.jpg",
         "inCart": false
@@ -11,6 +12,7 @@
       {
         "title":"Service 2",
         "description":"yeah",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 35,
         "image": "./serviceimages/cat.jpg",
         "inCart": false
@@ -18,6 +20,7 @@
       {
         "title":"Service 3",
         "description":"yeeeeah",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 5,
         "image": "./serviceimages/cat.jpg",
         "inCart": false
@@ -25,6 +28,7 @@
       {
         "title":"Service 4",
         "description":"wew",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 120,
         "image": "./serviceimages/cat.jpg",
         "inCart": false
@@ -32,6 +36,7 @@
       {
         "title":"Service 5",
         "description":"aaaaa",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 100,
         "image": "./serviceimages/cat.jpg",
         "inCart": false
@@ -39,6 +44,7 @@
       {
         "title":"Service 6",
         "description":"asadasda",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 60,
         "image": "./serviceimages/bikeonroad.JPG",
         "inCart": false

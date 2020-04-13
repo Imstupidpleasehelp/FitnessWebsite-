@@ -2,9 +2,26 @@ import React, { Component } from 'react';
 
 
 class Cart extends Component {
-    state = {  }
+    state = { 
+        cart: null
+     }
+     componentDidMount() {
+         console.log(this.props.cart)
+     }
     render() { 
-        return ( <div>I AM THE CART</div> );
+        if (this.props.cart)
+        return ( <div> 
+            <ul>{
+                this.props.cart.map(c => <li key={c.title}>Name: {c.title} Quantity: {c.quantity} </li>)
+            }
+            </ul>
+            {
+                
+            }
+            
+            
+            </div> 
+            ); else return (<p>Asss</p>)
     }
 }
  

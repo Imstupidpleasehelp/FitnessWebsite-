@@ -217,16 +217,10 @@ margin-right: auto;
 .service-item-text {
   text-align: center;
 }
-.service-item-image {
-  width: 50%;
-  height: 50%;
-  
-}
 .readmore {
   cursor: pointer;
   background-color: skyblue;
-  margin-left: 25%;
-  margin-right: 25%;
+  
 }
 .readmore:hover {
 color: white;

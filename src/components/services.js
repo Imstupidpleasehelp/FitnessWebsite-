@@ -11,9 +11,14 @@ class Services extends React.Component {
     super(props);
 
     this.state = {
-  
+      cartAmount: null,
+      cart: null,
      propdata: {}
     };
+  }
+  componentDidMount() {
+    console.log(this.props.cartAmount)
+    
   }
  
   
@@ -25,25 +30,24 @@ render() {
       serviceitems
     ) {
       return (
-        <div key={serviceitems.title} >
-          <div >
-              <div className="cf ">
-              <article className="fl w-50 w-20-ns tc pv5 bg-black-05" > 
-              <div className="">
-                <img src={serviceitems.image} alt={serviceitems.title} width="100vh" height="100vh" className=""></img>
-                </div>
-                <div className="">
-                <h5 className="" >{serviceitems.title}</h5>
+          
+              
+              <article className="" key={serviceitems.title}> 
+              
+                <img src={serviceitems.image} alt={serviceitems.title} width="150vw" height="200vh" className=""></img>
+            
+                <h5 className="service-item-title" >{serviceitems.title}</h5>
                 
-                <Collapsible trigger={<p className="readmore">Read more</p>}> 
+                
                 <p className="service-item-description">{serviceitems.description}</p>
-                <p className="service-item-price">${serviceitems.price}</p><button className="service-item-button btn btn-info">Add to cart</button>
-                </Collapsible>
-                </div>
+                <p className="service-item-price">${serviceitems.price}</p>
+                <button onClick={this.updateCart} className=" btn btn-info">Add to cart</button>
+                <Collapsible trigger={<p className="readmore">Read more</p>}>{serviceitems.fulldescription} </Collapsible>
+               
                 </article>
-              </div>
-              </div>
-        </div>
+              
+             
+        
       );
     });
   } else return <h1>Loading...</h1>;

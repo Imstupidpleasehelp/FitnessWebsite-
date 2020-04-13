@@ -6,7 +6,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 
 class Navbar extends Component {
   state = { 
-    CartAmount: 0
+    cartAmount: null
    }
   render() { 
     return ( <div>
@@ -17,7 +17,7 @@ class Navbar extends Component {
   <NavLink to="/Services" className=" navbarlabel">Services and Products</NavLink>
   <NavLink to="/Blog" className=" navbarlabel">Blog</NavLink>
   <NavLink to="/Contact" className="navbarlabel">Contact</NavLink>
-  <NavLink to="/Cart" className="navbarlabel"><FaShoppingCart />{this.props.CartAmount}</NavLink>
+  <NavLink to="/Cart" className="navbarlabel">{this.props.cartAmount}<FaShoppingCart /></NavLink>
     </nav>
 </div>
  );

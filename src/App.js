@@ -16,7 +16,17 @@ class App extends Component {
     this.updateCart = this.updateCart.bind(this);
     this.state = {
      propdata: null,
-    cartAmount: 0
+    cartAmount: 0,
+    cart : [
+      {
+        title: "Service 1",
+        description: "This is wear you would describe what this item is.",
+        price: 10,
+        image: "./serviceimages/cat.jpg",
+        inCart: false,
+        quantity: 1
+      }
+    ]
     }
   
     }
@@ -25,6 +35,7 @@ class App extends Component {
          cartAmount: prevState.cartAmount + 1
       }));
     }
+    
     
 
   componentDidMount() {
@@ -52,22 +63,26 @@ render (
     <div className="App">
   <div className="fixedview"> 
     <Header />
-   
-    <Navbar CartAmount={this.state.CartAmount} />
+   <button onClick={this.updateCart}>{this.state.cartAmount}</button>
+    <Navbar cartAmount={this.state.cartAmount} />
     
   </div>
     <div className="viewthatchanges" >
     <Route exact path='/'
   render={(props) => <Home {...props} propdata={this.state.propdata} />}
 />
+
     <Route path='/Services'
-  render={(props) => <Services {...props} propdata={this.state.propdata}  />}
+  render={(props) => <Services {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount} updateCart={this.updateCart} 
+          />}
 />
 <Route path='/Blog'
   render={(props) => <Blog {...props} propdata={this.state.propdata} />}
 />
 <Route path="/contact" component={Contact} />
-<Route path="/cart" component={Cart} />
+<Route path='/Cart'
+  render={(props) => <Cart {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount}/>}
+/>
     </div>
   </div>
   </BrowserRouter>
