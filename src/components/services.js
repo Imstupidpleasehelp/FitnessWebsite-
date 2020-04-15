@@ -36,13 +36,13 @@ render() {
               
                 <img src={serviceitems.image} alt={serviceitems.title} width="150vw" height="200vh" className=""></img>
             
-                <h5 className="service-item-title" >{serviceitems.title}</h5>
+                <h5 className="" >{serviceitems.title}</h5>
                 
                 
-                <p className="service-item-description">{serviceitems.description}</p>
-                <p className="service-item-price">${serviceitems.price}</p>
-                <button onClick={this.updateCart} className=" btn btn-info">Add to cart</button>
-                <Collapsible trigger={<p className="readmore">Read more</p>}>{serviceitems.fulldescription} </Collapsible>
+                <p className="">{serviceitems.description}</p>
+                <p className="">${serviceitems.price}</p>
+                <button  className="">Add to cart</button>
+                <Collapsible trigger={<p className="">Read more</p>}>{serviceitems.fulldescription} </Collapsible>
                
                 </article>
               

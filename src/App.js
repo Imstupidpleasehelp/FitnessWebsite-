@@ -35,7 +35,9 @@ class App extends Component {
          cartAmount: prevState.cartAmount + 1
       }));
     }
-    
+    testfunction() {
+      console.log('it worked')
+    }
     
 
   componentDidMount() {
