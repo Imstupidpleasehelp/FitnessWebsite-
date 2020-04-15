@@ -15,7 +15,15 @@ class Services extends React.Component {
       cart: null,
      propdata: {}
     };
+    document.addEventListener('click', e => {
+      if (e.target.classList.contains('button')) {
+        this.props.updateCart()
+        
+      }
+    });
+
   }
+  
   componentDidMount() {
     console.log(this.props.cartAmount)
     
@@ -41,7 +49,7 @@ render() {
                 
                 <p className="">{serviceitems.description}</p>
                 <p className="">${serviceitems.price}</p>
-                <button  className="">Add to cart</button>
+                <button className="button">Add to cart</button>
                 <Collapsible trigger={<p className="">Read more</p>}>{serviceitems.fulldescription} </Collapsible>
                
                 </article>
@@ -54,10 +62,10 @@ render() {
 
     return (
       <section >
-<h1 className="servicestitle">Some services I offer</h1>
-      <div className="col-xl-12 ">
+<h1 className="">Some services I offer</h1>
+      <div className=" ">
 
-         <div className="row servicebox">
+         <div className="">
 
             
 

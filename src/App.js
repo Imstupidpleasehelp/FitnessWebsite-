@@ -65,7 +65,6 @@ render (
     <div className="App">
   <div className="fixedview"> 
     <Header />
-   <button onClick={this.updateCart}>{this.state.cartAmount}</button>
     <Navbar cartAmount={this.state.cartAmount} />
     
   </div>
