@@ -12,16 +12,17 @@ class Cart extends Component {
         if (this.props.cart)
         return ( <div> 
             <ul>{
-                this.props.cart.map(c => <li key={c.title}>Name: {c.title} Quantity: {c.quantity} </li>)
+                this.props.cart.map(c => <li key={c.title}>Name: {c.title} Amount: {c.amount} </li>)
             }
             </ul>
+            <button className="btn btn-success">CheckOut</button>
             {
                 
             }
             
             
             </div> 
-            ); else return (<p>Asss</p>)
+            ); else return (<h4 className="servicestitle">Add items to your cart and they will appear here.</h4>)
     }
 }
  

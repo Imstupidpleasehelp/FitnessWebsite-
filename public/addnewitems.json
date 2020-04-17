@@ -7,7 +7,7 @@
         "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 10,
         "image": "./serviceimages/cat.jpg",
-        "inCart": false
+        "amount": 1
       },
       {
         "title":"Service 2",
@@ -15,7 +15,7 @@
         "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 35,
         "image": "./serviceimages/cat.jpg",
-        "inCart": false
+        "amount": 1
       },
       {
         "title":"Service 3",
@@ -23,7 +23,7 @@
         "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 5,
         "image": "./serviceimages/cat.jpg",
-        "inCart": false
+        "amount": 1
       },
       {
         "title":"Service 4",
@@ -31,7 +31,7 @@
         "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 120,
         "image": "./serviceimages/cat.jpg",
-        "inCart": false
+        "amount": 1
       },
       {
         "title":"Service 5",
@@ -39,7 +39,7 @@
         "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 100,
         "image": "./serviceimages/cat.jpg",
-        "inCart": false
+        "amount": 1
       },
       {
         "title":"Service 6",
@@ -47,7 +47,8 @@
         "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 60,
         "image": "./serviceimages/bikeonroad.JPG",
-        "inCart": false
+        "amount": 1
+
       }
     ]
   },

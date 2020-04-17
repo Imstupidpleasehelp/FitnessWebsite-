@@ -17,16 +17,7 @@ class App extends Component {
     this.state = {
      propdata: null,
     cartAmount: 0,
-    cart : [
-      {
-        title: "Service 1",
-        description: "This is wear you would describe what this item is.",
-        price: 10,
-        image: "./serviceimages/cat.jpg",
-        inCart: false,
-        quantity: 1
-      }
-    ]
+    cart : null
     }
   
     }
@@ -35,9 +26,11 @@ class App extends Component {
          cartAmount: prevState.cartAmount + 1
       }));
     }
-    testfunction() {
-      console.log('it worked')
+    addToCart(e) {
+      console.log(e.target);
+      
     }
+  
     
 
   componentDidMount() {
@@ -74,7 +67,7 @@ render (
 />
 
     <Route path='/Services'
-  render={(props) => <Services {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount} updateCart={this.updateCart} 
+  render={(props) => <Services {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount} updateCart={this.updateCart} addToCart={this.addToCart} 
           />}
 />
 <Route path='/Blog'

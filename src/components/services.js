@@ -21,13 +21,16 @@ class Services extends React.Component {
         
       }
     });
-
+    document.addEventListener('click', e => {
+      if (e.target.classList.contains('button')) {
+     
+        this.props.addToCart()
+        console.log(this.props.cart)
+      }
+    });
   }
   
-  componentDidMount() {
-    console.log(this.props.cartAmount)
-    
-  }
+  
  
   
 
@@ -36,47 +39,42 @@ render() {
   if (this.props.propdata) {
     var serviceitems = this.props.propdata.main.serviceitems.map(function(
       serviceitems
-    ) {
+    ) 
+    
+    {
       return (
           
-              
-              <article className="" key={serviceitems.title}> 
-              
-                <img src={serviceitems.image} alt={serviceitems.title} width="150vw" height="200vh" className=""></img>
-            
-                <h5 className="" >{serviceitems.title}</h5>
-                
-                
-                <p className="">{serviceitems.description}</p>
-                <p className="">${serviceitems.price}</p>
-                <button className="button">Add to cart</button>
-                <Collapsible trigger={<p className="">Read more</p>}>{serviceitems.fulldescription} </Collapsible>
+              <section className="cf w-100 pa2-ns" key={serviceitems.title}>
+              <article className="fl w-100 w-50-m  w-25-ns pa2-ns" > 
+              <div className="aspect-ratio aspect-ratio--1x1 ">
+                <img src={serviceitems.image} alt={serviceitems.title} className="db bg-center cover aspect-ratio--object"></img>
+            </div>
+                <h5 className="ph2 ph0-ns pb3 link db" >{serviceitems.title}</h5>
+                <p className="f5 f4-ns mb0 black-90">{serviceitems.description}</p>
+                <p className="f6 f5 fw4 mt2 black-60">${serviceitems.price}</p>
+                <p className="f6 f5 fw4 mt2 black-60">Duration:{serviceitems.amount} week(s)</p>
+                <button id={serviceitems.title} className="button">Add to cart</button>
+                <Collapsible trigger={<p className="readmore">Read more</p>}>{serviceitems.fulldescription} </Collapsible>
                
                 </article>
-              
-             
-        
+              </section>
+           
       );
     });
   } else return <h1>Loading...</h1>;
 
     return (
-      <section >
-<h1 className="">Some services I offer</h1>
-      <div className=" ">
+      <div>
+     <h1 className="servicestitle">Some services I offer</h1> 
+      <div className="container">
 
-         <div className="">
-
-            
-
-            
-              {serviceitems}
-            </div>
-
-            
-          </div>
-    
-   </section>
+<div className="row">
+  <div className=" col-lg-5">
+   {serviceitems}
+        </div>
+      </div>
+   </div>
+   </div>
     );
   }
 }
