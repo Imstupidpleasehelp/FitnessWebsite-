@@ -13,22 +13,32 @@ import {  Route, BrowserRouter } from 'react-router-dom';
 class App extends Component {
   constructor(props){
     super(props);
-    this.updateCart = this.updateCart.bind(this);
+    
+    this.addToCart = this.addToCart.bind(this);
     this.state = {
      propdata: null,
     cartAmount: 0,
-    cart : null
+    cart : [],
+    
     }
   
     }
-    updateCart (){
-      this.setState(prevState => ({
-         cartAmount: prevState.cartAmount + 1
-      }));
-    }
+    
     addToCart(e) {
-      console.log(e.target);
+      this.setState({
+        cartAmount: this.state.cartAmount + 1
+      })
+      console.log(e.target.parentNode) 
+      let tempcart = []
+      tempcart.push(e.target.parentNode)
       
+      
+     
+      
+      this.setState(prevState => ({
+        cart: prevState.cart + e
+      }));
+     
     }
   
     
@@ -67,7 +77,7 @@ render (
 />
 
     <Route path='/Services'
-  render={(props) => <Services {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount} updateCart={this.updateCart} addToCart={this.addToCart} 
+  render={(props) => <Services {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount} addToCart={this.addToCart} tempcart={this.tempcart}
           />}
 />
 <Route path='/Blog'

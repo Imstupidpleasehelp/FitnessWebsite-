@@ -15,17 +15,12 @@ class Services extends React.Component {
       cart: null,
      propdata: {}
     };
+    
     document.addEventListener('click', e => {
       if (e.target.classList.contains('button')) {
-        this.props.updateCart()
+   
+        this.props.addToCart(e)
         
-      }
-    });
-    document.addEventListener('click', e => {
-      if (e.target.classList.contains('button')) {
-     
-        this.props.addToCart()
-        console.log(this.props.cart)
       }
     });
   }
@@ -47,13 +42,13 @@ render() {
               <section className="cf w-100 pa2-ns" key={serviceitems.title}>
               <article className="fl w-100 w-50-m  w-25-ns pa2-ns" > 
               <div className="aspect-ratio aspect-ratio--1x1 ">
-                <img src={serviceitems.image} alt={serviceitems.title} className="db bg-center cover aspect-ratio--object"></img>
+                <img src={serviceitems.image} alt={serviceitems.title} id={serviceitems.image} className="db bg-center cover aspect-ratio--object"></img>
             </div>
                 <h5 className="ph2 ph0-ns pb3 link db" >{serviceitems.title}</h5>
-                <p className="f5 f4-ns mb0 black-90">{serviceitems.description}</p>
-                <p className="f6 f5 fw4 mt2 black-60">${serviceitems.price}</p>
-                <p className="f6 f5 fw4 mt2 black-60">Duration:{serviceitems.amount} week(s)</p>
-                <button id={serviceitems.title} className="button">Add to cart</button>
+                <p id={serviceitems.description} className="f5 f4-ns mb0 black-90">{serviceitems.description}</p>
+                <p id={serviceitems.price} className="f6 f5 fw4 mt2 black-60">${serviceitems.price}</p>
+                <p id ={serviceitems.amount} className="f6 f5 fw4 mt2 black-60">Duration:{serviceitems.amount} week(s)</p>
+                <button className="button">Add to cart</button>
                 <Collapsible trigger={<p className="readmore">Read more</p>}>{serviceitems.fulldescription} </Collapsible>
                
                 </article>

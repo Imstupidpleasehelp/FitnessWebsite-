@@ -9,10 +9,13 @@ class Cart extends Component {
          console.log(this.props.cart)
      }
     render() { 
-        if (this.props.cart)
+        if (this.props.cart.length !== 0) 
         return ( <div> 
             <ul>{
-                this.props.cart.map(c => <li key={c.title}>Name: {c.title} Amount: {c.amount} </li>)
+                this.props.cart.map(cart => <li > <h1>{cart.title} </h1>
+                   
+                    
+                    </li>)
             }
             </ul>
             <button className="btn btn-success">CheckOut</button>
