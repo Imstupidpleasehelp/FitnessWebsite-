@@ -38,10 +38,10 @@ render() {
       return (
         <div className="blogtitle">
   <h1>My blog</h1>
-           <div className="col-xl-12 bloggrid">
+           <div className="col-xl-12 ">
            
 
-         <div className="row blogbox">
+         <div className="row ">
               
   
               

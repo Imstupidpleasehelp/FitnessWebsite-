@@ -7,6 +7,7 @@ import Services from './components/services'
 import Navbar from  './components/navbar'
 import Header from './components/header'
 import Cart from  './components/Cart'
+import Checkout from './components/checkout'
 import {  Route, BrowserRouter } from 'react-router-dom';
 
 
@@ -86,6 +87,9 @@ render (
 <Route path="/contact" component={Contact} />
 <Route path='/Cart'
   render={(props) => <Cart {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount}/>}
+/>
+<Route path='/Checkout'
+  render={(props) => <Checkout {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount}/>}
 />
     </div>
   </div>
