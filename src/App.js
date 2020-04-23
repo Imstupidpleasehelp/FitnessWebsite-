@@ -25,22 +25,16 @@ class App extends Component {
   
     }
     
-    addToCart(e) {
+    addToCart (e) {
       this.setState({
-        cartAmount: this.state.cartAmount + 1
-      })
-      console.log(e.target.parentNode) 
-      let tempcart = []
-      tempcart.push(e.target.parentNode)
-      
-      
-     
-      
-      this.setState(prevState => ({
-        cart: prevState.cart + e
-      }));
-     
+        cartAmount: this.state.cartAmount + 1,
+        cart: [
+          ...this.state.cart,
+          [e.target.value, e.target.name, e.target.id]
+        ],
+      });console.log(this.state.cart)
     }
+
   
     
 
@@ -86,7 +80,7 @@ render (
 />
 <Route path="/contact" component={Contact} />
 <Route path='/Cart'
-  render={(props) => <Cart {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount}/>}
+  render={(props) => <Cart {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount} />}
 />
 <Route path='/Checkout'
   render={(props) => <Checkout {...props} propdata={this.state.propdata} cart={this.state.cart} cartAmount={this.state.cartAmount}/>}

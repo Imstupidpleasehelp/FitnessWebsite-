@@ -25,7 +25,17 @@ class Services extends React.Component {
     });
   }
   
+  componentWillUnmount() {
+    document.removeEventListener('click', e => {
+      if (e.target.classList.contains('button')) {
+   
+        this.props.addToCart(e)
+        
+      }
+    });
   
+
+  }
  
   
 
@@ -42,13 +52,13 @@ render() {
               <section className="cf w-100 pa2-ns" key={serviceitems.title}>
               <article className="fl w-100 w-50-m  w-25-ns pa2-ns" > 
               <div className="aspect-ratio aspect-ratio--1x1 ">
-                <img src={serviceitems.image} alt={serviceitems.title} id={serviceitems.image} className="db bg-center cover aspect-ratio--object"></img>
+                <img src={serviceitems.image} alt={serviceitems.title} className="db bg-center cover aspect-ratio--object"></img>
             </div>
-                <h5 className="ph2 ph0-ns pb3 link db" >{serviceitems.title}</h5>
-                <p id={serviceitems.description} className="f5 f4-ns mb0 black-90">{serviceitems.description}</p>
-                <p id={serviceitems.price} className="f6 f5 fw4 mt2 black-60">${serviceitems.price}</p>
-                <p id ={serviceitems.amount} className="f6 f5 fw4 mt2 black-60">Duration:{serviceitems.amount} week(s)</p>
-                <button className="button">Add to cart</button>
+                <h5 className="servicetitle" >{serviceitems.title}</h5>
+                <p id={serviceitems.description} className=" servicedesc" >{serviceitems.description}</p>
+                <p  className=" serviceprice">${serviceitems.price}</p>
+                <p id ={serviceitems.amount} className=" serviceamount">Duration:{serviceitems.amount} week(s)</p>
+                <button name={serviceitems.title} id= {serviceitems.image} value={serviceitems.price} className="button">Add to cart</button>
                 <Collapsible trigger={<p className="readmore">Read more</p>}>{serviceitems.fulldescription} </Collapsible>
                
                 </article>
@@ -64,7 +74,7 @@ render() {
       <div className="container">
 
 <div className="row">
-  <div className=" col-lg-6">
+  <div className="col-sm-4">
    {serviceitems}
         </div>
       </div>

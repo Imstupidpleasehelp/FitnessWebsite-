@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import StripeCheckout from 'react-stripe-checkout'
+import axios from "axios";
 
 
 class Checkout extends Component {
@@ -7,7 +8,28 @@ class Checkout extends Component {
         cart: null
      }
     render() { 
-        return ( <div>Enter your payment information</div> );
+      async  function handleToken(token) {
+const response = await axios.post('https://95dpq.sse.codesandbox.io/Checkout',{
+    token,
+    
+})
+const {status} = response.data
+if (status === 'success') {
+alert('yes')
+
+}
+else {
+    alert('no')
+}
+        }
+
+
+        return ( <div><StripeCheckout
+        stripeKey="pk_test_OAJFPwbj0kmyHhQmbcIJWm1R00qNoh5R9N"
+        token={handleToken}
+        
+        amount={1}
+         /></div> );
     }
 }
  

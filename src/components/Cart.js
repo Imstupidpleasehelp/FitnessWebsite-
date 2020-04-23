@@ -7,42 +7,56 @@ class Cart extends Component {
         super(props);    
     this.state = { 
         cart: null,
-        propdata: null
-     }
-     
-     }
-componentDidMount() {
-
-}
-     
-
-    render() { 
+        propdata: null,
+        priceamount: 0,
         
-        if (this.props.propdata) {
-            var serviceitems = this.props.propdata.main.serviceitems.map(function(
-              serviceitems
+     };
+    
+      
+  } 
+        
+     componentDidMount() {
+function makethetotal() {
+  console.log('I worked')
+}
+
+
+     }
+     
+     
+    
+    
+
+     
+
+    render()
+    
+   
+    { 
+        
+        if (this.props.cart.length !== 0) { 
+            var cartitems = this.props.cart.map(function(
+              cartitems
             ) 
             
             {
               return (
                   
-                      <section className="cf w-100 pa2-ns" key={serviceitems.title}>
-                      <article className="fl w-100 w-50-m  w-25-ns pa2-ns" > 
-                      <div className="aspect-ratio aspect-ratio--1x1 ">
-                        <img src={serviceitems.image} alt={serviceitems.title} id={serviceitems.image} className="db bg-center cover aspect-ratio--object"></img>
-                    </div>
-                        <h5 className="ph2 ph0-ns pb3 link db" >{serviceitems.title}</h5>
-                        <p id={serviceitems.description} className="f5 f4-ns mb0 black-90">{serviceitems.description}</p>
-                        <p id={serviceitems.price} className="f6 f5 fw4 mt2 black-60">${serviceitems.price}</p>
-                        <p id ={serviceitems.amount} className="f6 f5 fw4 mt2 black-60">Duration:{serviceitems.amount} week(s)</p>
-                        <button className="button">Add to cart</button>
+                      <section className="cart-item" key={cartitems[1]}>
+                      
+                        <img src={cartitems[2]}  id={cartitems[2]}  width="15%" height="15%" className="cart-item-image"></img>
+                    
+                        <h5 className="cart-title" >{cartitems[1]}</h5>
+                       
+                        <p  className="cart-price">${cartitems[0]}</p>
+                        <p  className="cart-duration">Duration: 0week(s)</p> <button >+1</button>
+                      
                         
                        
-                        </article>
-                        <nav>
-            <NavLink to='/Checkout'><button className="btn btn-success" >CheckOut</button></NavLink>
-            </nav>
+                        
+                        
                       </section>
+                      
                    
               );
             });
@@ -53,14 +67,21 @@ componentDidMount() {
             <div className="">
       
       <div className="cart-item-grid">
-        <div className="cart-item">
-         {serviceitems}
+        <div className="cart-item col-sm-6">
+         {cartitems}
+         <nav>
+            <NavLink to='/Checkout'><button className="btn btn-success checkoutbutton" >CheckOut</button></NavLink>
+            </nav>
               </div>
             </div>
          </div>
          </div>
           )
     }
-}
+    
+    
+    
+    
+  }
  
 export default Cart;
