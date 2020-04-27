@@ -1,3 +1,4 @@
+  
 import React, { Component } from 'react';
 
 import  { NavLink } from 'react-router-dom'
@@ -9,21 +10,16 @@ class Cart extends Component {
         cart: null,
         propdata: null,
         priceamount: 0,
-        
+        prices: document.getElementsByClassName('cartprice').value
      };
-    
-      
-  } 
-        
+  
+    }
      componentDidMount() {
-function makethetotal() {
-  console.log('I worked')
-}
 
-
+console.log(this.state.prices)
      }
      
-     
+    
     
     
 
@@ -42,39 +38,39 @@ function makethetotal() {
             {
               return (
                   
-                      <section className="cart-item" key={cartitems[1]}>
-                      
-                        <img src={cartitems[2]}  id={cartitems[2]}  width="15%" height="15%" className="cart-item-image"></img>
+                      <div className="row" key={cartitems[1]}>
+                      <div className="column">
+                        <img src={cartitems[2]}  id={cartitems[2]} width="20%" height="25%" alt={cartitems[1]} className=""></img>
                     
-                        <h5 className="cart-title" >{cartitems[1]}</h5>
+                        <h5 className="" >{cartitems[1]}</h5>
                        
-                        <p  className="cart-price">${cartitems[0]}</p>
-                        <p  className="cart-duration">Duration: 0week(s)</p> <button >+1</button>
+                        <p  className="cartprice">${cartitems[0]}</p>
+                        <p  className="">Duration: 0week(s)</p> <button >+1</button>
                       
-                        
+                        </div>
                        
                         
                         
-                      </section>
+                      </div>
                       
                    
               );
             });
-          } else return <h1>Add items to your cart and they will appear here.</h1>;
+          } else return <h1 className="nocart">Add items to your cart and they will appear here.</h1>;
         
           return (
-            <div> 
-            <div className="">
+            <div>
       
-      <div className="cart-item-grid">
-        <div className="cart-item col-sm-6">
+      
+        
          {cartitems}
-         <nav>
-            <NavLink to='/Checkout'><button className="btn btn-success checkoutbutton" >CheckOut</button></NavLink>
+         
+           
+      
+       <nav>   
+        <NavLink to='/Checkout'><button className="btn btn-success checkoutbutton" >CheckOut</button></NavLink>
             </nav>
-              </div>
-            </div>
-         </div>
+              
          </div>
           )
     }

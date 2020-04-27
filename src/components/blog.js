@@ -20,15 +20,16 @@ render() {
         blogitems
       ) {
         return (
-          <div key={blogitems.title} className="fl w-50 w-25-l link overflow-hidden">
+          <div key={blogitems.title} className="">
             
                 <div className="blog-item">
-                  <img src={blogitems.image} className="grow aspect-ratio--4x6" alt={blogitems.title}></img> 
-                  
-                 
                   <Collapsible className="blog-item-tagline" trigger={blogitems.tagline}>
                   <p className="blog-item-fulltext">{blogitems.fulltext}</p>
                 </Collapsible>
+                  <img src={blogitems.image}  className="" alt={blogitems.title}></img> 
+                  
+                 
+                  
                 </div>
           </div>
         );
@@ -38,10 +39,10 @@ render() {
       return (
         <div className="blogtitle">
   <h1>My blog</h1>
-           <div className="col-xl-12 ">
+           <div className="blogpage">
            
 
-         <div className="row ">
+         <div className="col-xl-12">
               
   
               

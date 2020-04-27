@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Imageshowoff from './subcomponents/imageshowoff'
 import Testimonials from './subcomponents/testimonials';
+import  { NavLink } from 'react-router-dom'
+
 
 class Home extends Component {
   state = {  }
@@ -73,7 +75,7 @@ When I’m not coaching or training myself, you’ll find me dreaming up cycling
     <div className="Testimonials">
       <Testimonials />
     </div>
-    
+    <div className="linktoservices"><img className="fitnessguy" src={require('./images/fitnessguy.gif')}></img> <NavLink to="/Services" > Ready to get started? </NavLink><img className="fitnessguy" src={require('./images/fitnessguy.gif')}></img></div>
 </div>
 </div>
    );
